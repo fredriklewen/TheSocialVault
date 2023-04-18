@@ -249,6 +249,7 @@ li {
     width: 100%;
     /* margin: 0; */
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 } 
 #devices #welcome-div {
     width: 80%;
@@ -359,6 +360,7 @@ li {
 }
 #opportunities-div div {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 0;
     width: 100%;
     /* display: grid;
