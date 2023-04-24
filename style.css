@@ -32,7 +32,7 @@ nav {
 }
 
 nav img {
-    height: 70px;
+    height: 60px;
 }
 
 .navbar-links {
@@ -208,7 +208,7 @@ li {
     min-height: 600px;
     padding: 70px 8%;
 }
-#welcome-div {
+.margin-div {
     width: 80%;
     margin: auto;
     text-align: left;
@@ -224,10 +224,6 @@ li {
     /* background-attachment: fixed; */
     height: calc(100vh - 100px); /* 700px */
 }
-/* #home-div #welcome-div {
-    width: 50%; 
-    margin: auto auto auto 0;
-} */
 #home-div .button, #home-div h1, #home-div .sub-h {
     text-align: center;
 }
@@ -244,6 +240,7 @@ li {
     /* background-attachment: fixed; */
     padding: 0;
     margin-bottom: 5%;
+    height: 700px;
 }
 #devices div {
     width: 100%;
@@ -251,7 +248,7 @@ li {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 } 
-#devices #welcome-div {
+#devices .margin-div {
     width: 80%;
     padding: 60px 0 0;
 } 
@@ -265,8 +262,50 @@ li {
 #devices .btn {
     box-shadow: none;
 }
+
+.polaroid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.polaroid {
+    width: 200px;
+    height: 250px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    /* background-color: #f5f5f5; */
+}
+.polaroid img {
+    width: 100%;
+    object-fit: cover;
+    /* margin-bottom: -10px; */
+    margin: auto auto 0;
+}
+.polaroid-details {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+.polaroid-details h4 {
+    margin: 0;
+    font-size: 20px;
+}
+.polaroid-details p {
+    margin: 5px 0 0;
+    color: white;
+}
+.polaroid-details a, .polaroid-details a:hover {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
 #testimonials-div {
     padding-bottom: 0;
+    /* width: 80%; */
 }
 #community-chat {
     max-width: 800px;
@@ -278,13 +317,7 @@ li {
 #community-chat img {
     width: 100%;
 }
-#no-catch {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(78, 78, 78, 0.2)), 
-    url(images/junior-reis-k0RIlxWWuqA-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    /* background-attachment: fixed; */
-}
+
 #movement {
     background: linear-gradient(rgba(255, 161, 73, 0.2), rgba(78, 78, 78, 0.2)), 
     url(images/kinga-howard-s4aOPAJ4v0E-unsplash.jpg);
@@ -301,7 +334,7 @@ li {
     padding-top: 100px;
     /* background-attachment: fixed; */
 }
-#apply-div #welcome-div {
+#apply-div .margin-div {
     margin-top: 0;
 }
 .img-div h2 {
@@ -316,6 +349,8 @@ li {
     background-size: cover;
     min-height: 0;
     height: 400px;
+
+    margin-bottom: 50px;
 }
 #bottom-div {
     background: url(images/pexels-anna-pou-8133278.jpg);
@@ -327,11 +362,16 @@ li {
 
 #resources-div {
     width: 100%;
-    padding: 80px 2em 0;
+    padding: 20px 1em 0;
+}
+#resources-desc {
+    width: 80%;
+    margin: auto;
 }
 
 #why-div {
     width: 80%;
+    margin-top: 8vw;
 }
 
 #empowering-div {
@@ -386,7 +426,7 @@ li {
 
 
 .div {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 60px 0;
     /* text-align: justify; */
@@ -513,15 +553,20 @@ form label {
     text-align: left;
 }
 
-/* .creators-grid div img {
-    width: 100%;
-    object-fit: cover;
-    pointer-events: none; 
-} */
-.creators-grid div video {
-    width: 100%;
-    height: 400px;
+.video-container {
+    position: relative;
+    padding-bottom: 125%; /* 500px height / 400px width * 100% = 125% */
+    overflow: hidden;
 }
+iframe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: -200px;
+}
+
 .creators-grid div p {
     font-style: italic;
 }
@@ -739,7 +784,6 @@ i {
     #empowering-div {
         grid-template-columns: 1fr;
         grid-gap: 60px;
-        width: 80%;
         padding: 80px 0 50px;
     }
     #empowering-div h2, #empowering-div .button {
@@ -757,7 +801,7 @@ i {
         font-size: 14px;
     }
 
-    #welcome-div {
+    .margin-div {
         width: 600px; 
     }
 
@@ -791,7 +835,7 @@ i {
         padding: 1.2em 1em;
     }
     nav img {
-        height: 40px;
+        height: 50px;
     }
     nav a {
         font-size: small;
@@ -801,7 +845,7 @@ i {
     #home-div {
         height: calc(100vh - 80px); /* 700px */
     }
-    #home-div #welcome-div {
+    #home-div .margin-div {
         width: 100%;
         margin: auto auto 0;
         text-align: left;
@@ -823,10 +867,6 @@ i {
         width: 90%;
         /* min-width: 600px; */
         margin: 50px auto -100px;
-    }
-    #resources-div {
-        width: 100%;
-        padding: 20px 2em 0;
     }
 
     .center-div {
@@ -855,10 +895,9 @@ i {
 @media (max-width: 500px) {
     h1 {
         font-size: 36px;
-        /* width: 80%; */
         margin: auto;
     }
-    #home-div #welcome-div {
+    #home-div .margin-div {
         margin: auto auto 0 0;
         text-align: left;
     }
@@ -867,7 +906,7 @@ i {
         font-size: 24px;
     }
     
-    #welcome-div {
+    .margin-div {
         text-align: left;
     }
 

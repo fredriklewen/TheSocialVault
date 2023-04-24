@@ -77,3 +77,28 @@ function toggleMenu() {
     var navbarMenu = document.querySelector('.navbar-menu');
     navbarMenu.classList.toggle('active');
 }
+
+
+// document.getElementById("join-form").addEventListener("submit", function(event) {
+//     // Prevent default form submission behavior
+//     event.preventDefault();
+
+//     // Send form data using AJAX request
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("POST", "https://hooks.zapier.com/hooks/catch/14919013/3udilyf/", true);
+//     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+//     xhr.onreadystatechange = function () {
+//         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+//             // Form data successfully sent, perform any desired actions here
+//             console.log("Form data sent successfully to Zapier");
+//             // Redirect to homepage or any other desired URL
+//             window.location.href = "https://example.com/homepage";
+//         }
+//     };
+//     var formData = new FormData(event.target);
+//     var jsonObject = {};
+//     formData.forEach(function (value, key) {
+//         jsonObject[key] = value;
+//     });
+//     xhr.send(JSON.stringify(jsonObject));
+// });
