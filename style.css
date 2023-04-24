@@ -474,6 +474,11 @@ form label {
     text-align: left;
 }
 
+.klaviyo-div {
+    width: 1000px;
+    margin: auto;
+}
+
 .resources-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
