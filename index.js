@@ -1,23 +1,4 @@
 addEventListener('DOMContentLoaded', function () {
-    // // Scroll down
-    // document.getElementById("scroll-down").addEventListener("click", function () {
-    //     window.scroll({
-    //         top: window.innerHeight,
-    //         behavior: "smooth"
-    //     });
-    // });
-
-    // // Scroll to top
-    // var element = document.getElementsByClassName("scroll-up");
-    // for (var i = 0; i < element.length; i++) {
-    //     element[i].addEventListener('click', function () {
-    //         window.scroll({
-    //             top: 0,
-    //             behavior: "smooth"
-    //         });
-    //     });
-    // }
-
 
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -44,8 +25,6 @@ addEventListener('DOMContentLoaded', function () {
         });
     });
 
-
-
     // function disableButton() {
     //     const invalidForm = document.querySelector('form:invalid');
     //     const submitBtn = document.getElementById('submit');
@@ -68,9 +47,6 @@ addEventListener('DOMContentLoaded', function () {
     //   for (let input of inputs) {
     //     input.addEventListener('change', disableButton);
     //   }
-
-    
-
 });
 
 function toggleMenu() {

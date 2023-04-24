@@ -83,14 +83,7 @@ nav img {
     .navbar-links {
         display: none;
     }
-    /* .navbar-burger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        cursor: pointer;
-        height: 30px;
-        width: 30px;
-    } */
+
     .navbar-burger {
         display: flex;
         cursor: pointer;
@@ -266,26 +259,34 @@ li {
 .polaroid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 4% 2%;
+    margin: 20px auto 0;
 }
 .polaroid {
-    width: 200px;
-    height: 250px;
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-    /* background-color: #f5f5f5; */
+    width: 100%;
+    /* min-width: 196px; */
+    height: 400px;
+    /* display: grid; */
+    /* grid-template-rows: 250px 80px; */
+    grid-gap: none;
+    background-color: rgb(36, 36, 36);
+    padding: 1em;
+    border-radius: 5px;
 }
 .polaroid img {
+    height: 250px;
     width: 100%;
     object-fit: cover;
-    /* margin-bottom: -10px; */
     margin: auto auto 0;
+    border-radius: 1px;
 }
 .polaroid-details {
     width: 100%;
-    padding: 12px;
+    padding: 8px 0;
     background-color: rgb(36, 36, 36);
     color: white;
+    /* display: grid; */
+    /* grid-template-columns: 3fr 1fr; */
 }
 .polaroid-details h4 {
     margin: 0;
@@ -300,7 +301,6 @@ li {
     color: white;
     text-decoration: none;
 }
-
 
 
 #testimonials-div {
@@ -862,6 +862,12 @@ i {
 
     .resources-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .polaroid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2% 5%;
+        margin-bottom: 50px;
     }
 
 
