@@ -131,6 +131,11 @@ h1 {
     text-align: center;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+.policy-h1 {
+    color: black;
+    text-shadow: none;
+    margin: 50px auto 0;
+}
 .sub-h {
     color: white;
     letter-spacing: 0.1em;
