@@ -644,6 +644,7 @@ p a:hover, b a:hover, li a:hover, label a:hover {
 #agreement-link {
     text-align: center;
     margin: 0 auto 80px;
+    padding: 0;
 }
 
 /* .back-btn {
