@@ -639,6 +639,12 @@ p a:hover, b a:hover, li a:hover, label a:hover {
     background-color: var(--gold-hover);
 }
 
+
+#agreement-link {
+    text-align: center;
+    margin: 0 auto 80px;
+}
+
 /* .back-btn {
     position: absolute;
     font-size: large;
