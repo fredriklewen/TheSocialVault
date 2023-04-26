@@ -480,6 +480,7 @@ form label {
 .klaviyo-div {
     width: 800px;
     margin: auto;
+    padding: 0;
 }
 
 .resources-grid {
